@@ -73,7 +73,7 @@ You have two choices for the final project.
 
 1. Project, That is a final report that includes code.
 2. Report, that is a final project without code.
-   
+
 YOu will be including the type of the project as a prefix to your title, as well as in the Type tag
 at the beginning of your project.
 
