@@ -5,13 +5,12 @@
 Status: final, Type: Project
 
 
-Gregor von Laszewski, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354/), [Edit](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/project.md)
+Paula Madetzke, [sp21-599-354] <https://github.com/cybertraining-dsc/sp21-599-354>
 
 {{% pageinfo %}}
 
 ## Abstract
 
-Her comes a short abstract of the project that summarizes what it is about
 
 Contents
 
@@ -28,6 +27,8 @@ Please not ethat an up to date version of these instructions is available at
 * <https://github.com/cybertraining-dsc/hid-example/blob/main/project/index.md>
 
 Here comes a convincing introduction to the problem
+
+Agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of disease or weeds will help them avoid using as much pesticide, and get attention to disease in their fields early enough to avoid further crop loss. This project will explore how pictures of plants can be used to detect disease or weeds in their fields. The AI has been trained on pictures of healthy and diseased crop leaves, in addition to weeds and seedlings of desired crops. Then, the AI is tested to determine the accuracy of the model.
 
 ## 2. Report Format
 
