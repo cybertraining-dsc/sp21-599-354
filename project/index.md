@@ -107,7 +107,7 @@ A convincing but not fake conclusion should summarize what the conclusion of the
 
 ## 8. Acknowledgments
 
-Please add acknowledgments to all that contributed or helped on this project.  
+Please add acknowledgments to all that contributed or helped on this project.
 
 ## 9. References
 
