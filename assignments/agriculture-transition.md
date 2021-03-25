@@ -1,5 +1,6 @@
 # AI Transition in Agriculture
-## Paula Madetzke
+
+Paula Madetzke
 
 When I was looking into AI driven transitions for energy, I came across another field that was interesting and would like to explore further: agriculture. As the world population grows while the climate changes and makes farming more unpredictable, the need for smarter agriculture could not be greater. Agriculture production tripled between 1960 and 2015 (Intel), but along with this steep increase in production, came deforestation, intense pesticide usage, and other environmental problems that can not be sustained for the next wave of production. Luckily, AI can be used to solve many of the emerging challenges of the future of farming by reducing the number of human farmers, increasing yield efficiency, and minimizing the negative environmental impacts of agriculture.
 
@@ -11,12 +12,6 @@ Fertilizers and pesticides have allowed modern farms to produce far higher yield
 
 The incoming challenges to farming in an era of climate change, a growing population, and avoiding further damage to the environment from runoff are formidable, but AI can be a powerful tool for meeting these challenges. For the purposes of this class, there are a fair number of open source datasets for agriculture with a wide range of specific applications. I am excited to delve deeper into this important and exciting subject.
     
-
-
-
-
-
-
 
 
 ## Resources
