@@ -1,8 +1,8 @@
 :o2: this is not valid markdown
 
-##Transitions in Green Energy Driven by AI
+# Transitions in Green Energy Driven by AI
 
-#Paula Madetzke
+## Paula Madetzke
 
 Powering the world in a sustainable way will be an increasingly important endeavor astime goes on, and green energy will need to be a core component of this transition. However,relying on fluctuating sources such as wind and solar, in addition to our current lack ofubiquitous battery storage of the energy results in some structural difficulty. However, theseissues largely boil down to a matter of predicting the supply and demand of energy. This task ofpattern recognition makes the problem an opportune one for artificial intelligence to solve, andmany strides have already been taken in the field.
 
@@ -17,10 +17,10 @@ Another useful application of AI for green energy is the problem of storage. One
 Before having a closer look, I was not aware how prominent or promising AI was in thefield of green energy. Previously, I had only heard about how the complexity of the variability inweather and the problem of battery storage would be what prevents green energy frombecoming the standard for power. AI not only seems promising for the future of green energy,but it appears to be a significant portion of the solution to the roadblocks that have long plaguedthe field.
 
 
-Resources
+# Resources
 
-[^1] https://emerj.com/ai-sector-overviews/artificial-intelligence-for-energy-efficiency-and-renewable-energy/
+[^1]: Online Resource <https://emerj.com/ai-sector-overviews/artificial-intelligence-for-energy-efficiency-and-renewable-energy/>
 
-[^2] https://www.renewablesinafrica.com/6-unexpected-ai-applications-in-renewable-energy/
+[^2]: Online Resource <https://www.renewablesinafrica.com/6-unexpected-ai-applications-in-renewable-energy/>
 
-[^3] https://www.weforum.org/agenda/2018/05/how-ai-can-help-meet-global-energy-demand
+[^3] Online Resource <https://www.weforum.org/agenda/2018/05/how-ai-can-help-meet-global-energy-demand>
