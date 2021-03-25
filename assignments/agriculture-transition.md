@@ -21,14 +21,14 @@ The incoming challenges to farming in an era of climate change, a growing popula
 
 ## Resources
 
-[^1]: https://www.forbes.com/sites/cognitiveworld/2019/07/05/how-ai-is-transforming-agriculture/?sh=6c635c244ad1
+[^1]: <https://www.forbes.com/sites/cognitiveworld/2019/07/05/how-ai-is-transforming-agriculture/?sh=6c635c244ad1>
 
-[^2]: https://medium.com/neuromation-blog/ai-in-agriculture-49c0ea0e2b48
+[^2]: <https://medium.com/neuromation-blog/ai-in-agriculture-49c0ea0e2b48>
 
-[^3]: https://www.washingtonpost.com/news/national/wp/2019/02/17/feature/inside-the-race-to-replace-farmworkers-with-robots/?noredirect=on&utm_term=.70819da05b7
+[^3]: <https://www.washingtonpost.com/news/national/wp/2019/02/17/feature/inside-the-race-to-replace-farmworkers-with-robots/?noredirect=on&utm_term=.70819da05b7>
 
-[^4]: https://www.intel.com/content/www/us/en/big-data/article/agriculture-harvests-big-data.html
+[^4]: <https://www.intel.com/content/www/us/en/big-data/article/agriculture-harvests-big-data.html>
 
-[^5]: https://borgenproject.org/ai-usage-in-agriculture/
+[^5]: <https://borgenproject.org/ai-usage-in-agriculture/>
 
-[^6]: https://lionbridge.ai/datasets/14-free-agriculture-datasets-for-machine-learning/
+[^6]: <https://lionbridge.ai/datasets/14-free-agriculture-datasets-for-machine-learning/>
