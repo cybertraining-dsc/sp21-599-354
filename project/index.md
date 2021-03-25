@@ -5,7 +5,8 @@
 Status: final, Type: Project
 
 
-Paula Madetzke, [sp21-599-354] (https://github.com/cybertraining-dsc/sp21-599-354), [Edit] (https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/index.md)
+Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354), [Edit](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/index.md)
+
 
 {{% pageinfo %}}
 
