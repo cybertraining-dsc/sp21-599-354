@@ -1,5 +1,5 @@
-##AI Transition in Agriculture
-#Paula Madetzke
+# AI Transition in Agriculture
+## Paula Madetzke
 
 When I was looking into AI driven transitions for energy, I came across another field that was interesting and would like to explore further: agriculture. As the world population grows while the climate changes and makes farming more unpredictable, the need for smarter agriculture could not be greater. Agriculture production tripled between 1960 and 2015 (Intel), but along with this steep increase in production, came deforestation, intense pesticide usage, and other environmental problems that can not be sustained for the next wave of production. Luckily, AI can be used to solve many of the emerging challenges of the future of farming by reducing the number of human farmers, increasing yield efficiency, and minimizing the negative environmental impacts of agriculture.
 
@@ -19,15 +19,16 @@ The incoming challenges to farming in an era of climate change, a growing popula
 
 
 
-##Resources
-[^1]https://www.forbes.com/sites/cognitiveworld/2019/07/05/how-ai-is-transforming-agriculture/?sh=6c635c244ad1
+## Resources
 
-[^2]https://medium.com/neuromation-blog/ai-in-agriculture-49c0ea0e2b48
+[^1]: https://www.forbes.com/sites/cognitiveworld/2019/07/05/how-ai-is-transforming-agriculture/?sh=6c635c244ad1
 
-[^3]https://www.washingtonpost.com/news/national/wp/2019/02/17/feature/inside-the-race-to-replace-farmworkers-with-robots/?noredirect=on&utm_term=.70819da05b7
+[^2]: https://medium.com/neuromation-blog/ai-in-agriculture-49c0ea0e2b48
 
-[^4]https://www.intel.com/content/www/us/en/big-data/article/agriculture-harvests-big-data.html
+[^3]: https://www.washingtonpost.com/news/national/wp/2019/02/17/feature/inside-the-race-to-replace-farmworkers-with-robots/?noredirect=on&utm_term=.70819da05b7
 
-[^5]https://borgenproject.org/ai-usage-in-agriculture/
+[^4]: https://www.intel.com/content/www/us/en/big-data/article/agriculture-harvests-big-data.html
 
-[^6]https://lionbridge.ai/datasets/14-free-agriculture-datasets-for-machine-learning/
+[^5]: https://borgenproject.org/ai-usage-in-agriculture/
+
+[^6]: https://lionbridge.ai/datasets/14-free-agriculture-datasets-for-machine-learning/
