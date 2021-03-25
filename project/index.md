@@ -88,8 +88,8 @@ at the beginning of your project.
 Remember this is not a powerpoint presentation, but a report so we recommend
 
 1. Use itemized or enumeration lists sparingly
-2. When using bulleted lists use * and not - 
-   
+2. When using bulleted lists use * and not -
+
 ## 5. Datasets
 
 Datasets can be huge and GitHub has limited space. Only very small datasets should be stored in GitHub.
@@ -100,7 +100,7 @@ the download function.
 ## 6. Benchmark
 
 Your project must include a benchmark. The easiest is to use cloudmesh-common [^2]
- 
+
 ## 6. Conclusion
 
 A convincing but not fake conclusion should summarize what the conclusion of the project is.
