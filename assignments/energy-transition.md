@@ -1,8 +1,8 @@
 :o2: this is not valid markdown
 
-Transitions in Green Energy Driven by AI
+##Transitions in Green Energy Driven by AI
 
-Paula Madetzke
+#Paula Madetzke
 
 Powering the world in a sustainable way will be an increasingly important endeavor astime goes on, and green energy will need to be a core component of this transition. However,relying on fluctuating sources such as wind and solar, in addition to our current lack ofubiquitous battery storage of the energy results in some structural difficulty. However, theseissues largely boil down to a matter of predicting the supply and demand of energy. This task ofpattern recognition makes the problem an opportune one for artificial intelligence to solve, andmany strides have already been taken in the field.
 
@@ -19,8 +19,8 @@ Before having a closer look, I was not aware how prominent or promising AI was i
 
 Resources
 
-[1] https://emerj.com/ai-sector-overviews/artificial-intelligence-for-energy-efficiency-and-renewable-energy/
+[^1] https://emerj.com/ai-sector-overviews/artificial-intelligence-for-energy-efficiency-and-renewable-energy/
 
-[2] https://www.renewablesinafrica.com/6-unexpected-ai-applications-in-renewable-energy/
+[^2] https://www.renewablesinafrica.com/6-unexpected-ai-applications-in-renewable-energy/
 
-[3] https://www.weforum.org/agenda/2018/05/how-ai-can-help-meet-global-energy-demand
+[^3] https://www.weforum.org/agenda/2018/05/how-ai-can-help-meet-global-energy-demand
