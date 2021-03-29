@@ -14,7 +14,12 @@ This project utilizes images from the Aarhus University [^1] dataset to train a 
 
 Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
 
-## Timeline
+## Estimated Timeline
+
+* Week 1: Compile, organize and clean data
+* Week 2-3: Implement CNN to train AI with majority of data/test subset of it
+* Week 3-4: Create and test designed crop "rows", visualize results
+* Week 5: Write Report
 
 
 
