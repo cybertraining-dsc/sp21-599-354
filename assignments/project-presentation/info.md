@@ -22,5 +22,7 @@ Previous similar work has been done with this dataset [^2] in Keras with CNN ima
 ## Resources
 
 [^1]: Aarhus University <https://vision.eng.au.dk/plant-seedlings-dataset/>
+
 [^2]: Plant Seedling Classification <https://becominghuman.ai/plant-seedlings-classification-using-cnns-ea7474416e65>
+
 [^3]: Oluwafemi Tairu <https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289>
