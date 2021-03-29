@@ -1,9 +1,9 @@
-#Using AI to Detect Plants and Weeds
+# Using AI to Detect Plants and Weeds
 
 Paula Madetzke
 
-##Short Overview
+## Short Overview
 
-##Resources
+## Resources
 
-[^1] Aarhus University, (https://vision.eng.au.dk/plant-seedlings-dataset/)
+[^1]: Aarhus University <https://vision.eng.au.dk/plant-seedlings-dataset/>
