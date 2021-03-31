@@ -4,7 +4,9 @@
 [![Status](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
 Status: final, Type: Project
 
-:o2: this is a comment
+* :o2: Title missing
+* :o2: Abstract should be defined by now
+* :o2: Refernces shoudl be defined by now
 
 Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354), [Edit](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/index.md)
 
@@ -13,6 +15,7 @@ Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354
 
 ## Abstract
 
+TBD
 
 Contents
 
