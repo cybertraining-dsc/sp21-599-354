@@ -4,8 +4,7 @@
 [![Status](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
 Status: final, Type: Project
 
-* :o2: Abstract should be defined by now
-* :o2: Refernces shoudl be defined by now
+
 
 Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354), [Edit](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/index.md)
 
@@ -16,7 +15,6 @@ Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354
 
 Weed identification is an important component of agriculture, and can effect the way utilize herbicide. When unable to locate weeds in a large field, farmers are forced to blanket utilize herbicide for weed control. However, this method is bad for the environment, as the herbicide can leech into the water, and bad for the farmer, because they then must pay for far more fertilizer than they really need to control weeds. This project utilizes images from the Aarhus University [^1] dataset to train a CNN to identify images of 12 species of plants. To better simulate actual rows of crops, a subset of the images for testing will be arranged in a list representing a crop row, with weeds being distributed in known locations. Then, the AI is tested on the row, and should be able to determine where in the row the weeds are located.
 
-In other papers, I have written the abstract last and shared the finished results. Is this supposed to be a more concise introduction with the results added at the end of the project?
 
 Contents
 
@@ -34,7 +32,9 @@ Please not ethat an up to date version of these instructions is available at
 
 Here comes a convincing introduction to the problem
 
-Agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of disease or weeds will help them avoid using as much pesticide, and get attention to disease in their fields early enough to avoid further crop loss. This project will explore how pictures of plants can be used to detect disease or weeds in their fields. The AI has been trained on pictures of healthy and diseased crop leaves, in addition to weeds and seedlings of desired crops. Then, the AI is tested to determine the accuracy of the model.  Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
+With a growing global population, and a changing climate that can make farm work hostile, it is increasingly important for farms to be efficent food producers. Fertilizers, pesticides, and herbicides have allowed modern farms to produce far higher yields than they would otherwise be able to. However, the environmental impact from the runoff of these chemicals when they leave the farm can be incredibly detrimental to both human and natural wellbeing. This is why agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of weeds will help them avoid using as much herbicide. This project will explore how pictures of plants can be used to detect weeds in crop fields. The AI has been trained with a CNN on pictures of 12 seedling species including 960 inividual plants representing both weeds desired crops. [^1] Then, the AI is tested to determine the accuracy of the model. First this is accomplished by reserving a subset of the training data to be tested by the AI in order to get a base-line test of accuracy. Next, the test data will be arranged in a list to mimic a row of crops with a desired crop, and several weeds. Then the AI would go through the images and a program would display where a farmer would need to apply the herbicide, according to the AI. The true test would be to see if the program can produce a helpful map to narrow down where herbicide should be applied.
+
+Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
 
 ## 2. Report Format
 
