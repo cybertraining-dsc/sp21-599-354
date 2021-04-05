@@ -118,8 +118,8 @@ Please add acknowledgments to all that contributed or helped on this project.
 
 ## 9. References
 
-[^1]: Aarhus University https://vision.eng.au.dk/plant-seedlings-dataset/
+[^1]: Aarhus University <https://vision.eng.au.dk/plant-seedlings-dataset/>
 
-[^2]: Plant Seedling Classification https://becominghuman.ai/plant-seedlings-classification-using-cnns-ea7474416e65
+[^2]: Plant Seedling Classification <https://becominghuman.ai/plant-seedlings-classification-using-cnns-ea7474416e65>
 
-[^3]: Oluwafemi Tairu https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289
+[^3]: Oluwafemi Tairu <https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289>
