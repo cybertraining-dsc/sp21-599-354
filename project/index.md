@@ -1,10 +1,9 @@
-# Project: This is the Descriptive Title of the Example
+# Project: Identifying Agricultural Weeds with CNN
 
 [![Check Report](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
 [![Status](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
 Status: final, Type: Project
 
-* :o2: Title missing
 * :o2: Abstract should be defined by now
 * :o2: Refernces shoudl be defined by now
 
@@ -15,7 +14,9 @@ Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354
 
 ## Abstract
 
-TBD
+Weed identification is an important component of agriculture, and can effect the way utilize herbicide. When unable to locate weeds in a large field, farmers are forced to blanket utilize herbicide for weed control. However, this method is bad for the environment, as the herbicide can leech into the water, and bad for the farmer, because they then must pay for far more fertilizer than they really need to control weeds. This project utilizes images from the Aarhus University [^1] dataset to train a CNN to identify images of 12 species of plants. To better simulate actual rows of crops, a subset of the images for testing will be arranged in a list representing a crop row, with weeds being distributed in known locations. Then, the AI is tested on the row, and should be able to determine where in the row the weeds are located.
+
+In other papers, I have written the abstract last and shared the finished results. Is this supposed to be a more concise introduction with the results added at the end of the project?
 
 Contents
 
@@ -33,7 +34,7 @@ Please not ethat an up to date version of these instructions is available at
 
 Here comes a convincing introduction to the problem
 
-Agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of disease or weeds will help them avoid using as much pesticide, and get attention to disease in their fields early enough to avoid further crop loss. This project will explore how pictures of plants can be used to detect disease or weeds in their fields. The AI has been trained on pictures of healthy and diseased crop leaves, in addition to weeds and seedlings of desired crops. Then, the AI is tested to determine the accuracy of the model.
+Agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of disease or weeds will help them avoid using as much pesticide, and get attention to disease in their fields early enough to avoid further crop loss. This project will explore how pictures of plants can be used to detect disease or weeds in their fields. The AI has been trained on pictures of healthy and diseased crop leaves, in addition to weeds and seedlings of desired crops. Then, the AI is tested to determine the accuracy of the model.  Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
 
 ## 2. Report Format
 
@@ -117,14 +118,8 @@ Please add acknowledgments to all that contributed or helped on this project.
 
 ## 9. References
 
-Your report must include at least 6 references. Please use customary academic citation and not just URLs. As we will at 
-one point automatically change the references from superscript to square brackets it is best to introduce a space before 
-the first square bracket.
+[^1]: Aarhus University https://vision.eng.au.dk/plant-seedlings-dataset/
 
-[^1]: Use of energy explained - Energy use in homes, [Online resource] 
-      <https://www.eia.gov/energyexplained/use-of-energy/electricity-use-in-homes.php>
+[^2]: Plant Seedling Classification https://becominghuman.ai/plant-seedlings-classification-using-cnns-ea7474416e65
 
-
-[^2]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, [GitHub] 
-      <https://github.com/cloudmesh/cloudmesh-common>
-
+[^3]: Oluwafemi Tairu https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289
