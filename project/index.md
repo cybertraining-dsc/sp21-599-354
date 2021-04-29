@@ -48,7 +48,8 @@ it might learn features of the sand or border instead of the leaves.
 
 **Figure 1** Dataset Image options [^1]: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
 
-With the training dataset selected, it must pe preprocessed to work with the pytorch CNN implementation [
+With the training dataset selected, it must pe preprocessed to work with the pytorch CNN implementation [^4]. The following must be done to prepare the dataset: add padding to all of the segmented images so
+that they are the same size, create a csv file with ids and labels to identify the images, and separate the training and the test data. A preprocessing python script can be used to achieve all three. 
 
 
 
