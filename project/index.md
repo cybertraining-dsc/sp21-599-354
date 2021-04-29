@@ -37,6 +37,7 @@ With a growing global population, and a changing climate that can make farm work
 Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
 
 ## 2. Pre-Processing The Data
+
 The plant dataset [^1] has three sets of image options to choose from. The first is a large image of a tray with multiple plants of the same species.
 
 ![Figure 1](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/large_weeds.jpg)
