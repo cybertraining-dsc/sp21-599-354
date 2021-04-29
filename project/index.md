@@ -40,7 +40,9 @@ Previous similar work has been done with this dataset [^2] in Keras with CNN ima
 The plant dataset [^1] has three sets of image options to choose from. The first is a large image of a tray with multiple plants of the same species.
 
 ![Figure 1](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/large_weeds.jpg)
+
 ![Figure 2](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/non-segmented.png)
+
 ![Figure 3](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/segmented.png)
 
 **Figure 1** Dataset Image options: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
