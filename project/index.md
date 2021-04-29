@@ -38,7 +38,9 @@ Previous similar work has been done with this dataset [^2] in Keras with CNN ima
 
 ## 2. Pre-Processing The Data
 
-The plant dataset [^1] has three sets of image options to choose from. The first is a large image of a tray with multiple plants of the same species.
+The plant dataset [^1] has three sets of image options to choose from. The first has large images of trays with multiple plants of the same species, the second has cropped images of individual seedings from
+the larger picture (non-segmented), while the third is both cropped, and has the background replaced with black pixels such that only the leaves remain in the picture (segmented). To train the data, the segmented data is used. This is because it is important for the AI to train such that it detects patterns only for the most important features of the image. If the AI were to train on the images in the background,
+it might learn features of the sand or border instead of the leaves.
 
 ![Figure 1](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/large_weeds.jpg)
 
@@ -46,7 +48,10 @@ The plant dataset [^1] has three sets of image options to choose from. The first
 
 ![Figure 3](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/segmented.png)
 
-**Figure 1** Dataset Image options: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
+**Figure 1** Dataset Image options [^1]: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
+
+
+
 
 
 
