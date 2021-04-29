@@ -30,8 +30,6 @@ Please not ethat an up to date version of these instructions is available at
 
 * <https://github.com/cybertraining-dsc/hid-example/blob/main/project/index.md>
 
-Here comes a convincing introduction to the problem
-
 With a growing global population, and a changing climate that can make farm work hostile, it is increasingly important for farms to be efficent food producers. Fertilizers, pesticides, and herbicides have allowed modern farms to produce far higher yields than they would otherwise be able to. However, the environmental impact from the runoff of these chemicals when they leave the farm can be incredibly detrimental to both human and natural wellbeing. This is why agricultre is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of weeds will help them avoid using as much herbicide. This project will explore how pictures of plants can be used to detect weeds in crop fields. The AI has been trained with a CNN on pictures of 12 seedling species including 960 inividual plants representing both weeds desired crops [^1]. Then, the AI is tested to determine the accuracy of the model. First this is accomplished by reserving a subset of the training data to be tested by the AI in order to get a base-line test of accuracy. Next, the test data will be arranged in a list to mimic a row of crops with a desired crop, and several weeds. Then the AI would go through the images and a program would display where a farmer would need to apply the herbicide, according to the AI. The true test would be to see if the program can produce a helpful map to narrow down where herbicide should be applied.
 
 Previous similar work has been done with this dataset [^2] in Keras with CNN image recogniton, while this project is implemented in pytorch. Similar agricultural image recognition with plant disease [^3] is also available to be studied.
@@ -50,7 +48,7 @@ it might learn features of the sand or border instead of the leaves.
 
 **Figure 1** Dataset Image options [^1]: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
 
-
+With the training dataset selected, it must pe preprocessed to work with the pytorch CNN implementation [
 
 
 
@@ -140,3 +138,5 @@ Please add acknowledgments to all that contributed or helped on this project.
 [^2]: Plant Seedling Classification <https://becominghuman.ai/plant-seedlings-classification-using-cnns-ea7474416e65>
 
 [^3]: Oluwafemi Tairu <https://towardsdatascience.com/plant-ai-plant-disease-detection-using-convolutional-neural-network-9b58a96f2289>
+
+[^4]: Pulkit Sharma <https://www.analyticsvidhya.com/blog/2019/10/building-image-classification-models-cnn-pytorch/>
