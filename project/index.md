@@ -8,6 +8,9 @@ Status: final, Type: Project
 
 Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354), [Edit](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/index.md)
 
+Code:
+* [data_prep.ipynb](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/code/data_prep.ipynb)
+* [CNN_Code.ipynb](https://github.com/cybertraining-dsc/sp21-599-354/blob/main/project/code/CNN_Code.ipynb)
 
 {{% pageinfo %}}
 
