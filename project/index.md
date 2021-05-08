@@ -24,24 +24,21 @@ Weed identification is an important component of agriculture, and can effect the
 
 2. [Pre-Processing](##2)
 
-3. [Running The CNN]
+3. [Running The CNN] (##3)
 
-4. [Benchmarking]
+4. [Benchmarking] (##4)
 
-5. [Conclusion]
+5. [Conclusion] (##5)
 
-6. [Acknowledgments]
+6. [Acknowledgments] (##6)
 
-7. [References]
+7. [References] (##7)
 
 >}}
 
 
 ## 1. Introduction
 
-Please not ethat an up to date version of these instructions is available at
-
-* <https://github.com/cybertraining-dsc/hid-example/blob/main/project/index.md>
 
 With a growing global population, and a changing climate that can make farm work hostile, it is increasingly important for farms to be efficient food producers. Fertilizers, pesticides, and herbicides have allowed modern farms to produce far higher yields than they would otherwise be able to. However, the environmental impact from the runoff of these chemicals when they leave the farm can be incredibly detrimental to both human and natural wellbeing. This is why agriculture is a field that is ripe for improvement from AI. There are opportunities for AI to be used in the harvesting of crops, predictive analytics, and field monitoring. In this project, AI is used in the field monitoring application. This is helpful for farmers because spot detection of weeds will help them avoid using as much herbicide. This project will explore how pictures of plants can be used to detect weeds in crop fields. The AI has been trained with a CNN on pictures of 12 seedling species including 960 individual plants representing both weeds desired crops [^1]. Although 12 species are available, only 3 will be studied in this project: black grass, shepherd’s purse, and sugar beet. These plants were chosen because their seedlings look different enough to give the AI a better chance at successfully detecting differences. Then, the AI is tested to determine the accuracy of the model. First this is accomplished by reserving a subset of the training data to be tested by the AI in order to get a base-line test of accuracy. Next, the test data will be arranged in a list to mimic a row of crops with a desired crop, and several weeds. Then the AI would go through the images and a program would display where a farmer would need to apply the herbicide, according to the AI. The true test would be to see if the program can produce a helpful map to narrow down where herbicide should be applied.
 
