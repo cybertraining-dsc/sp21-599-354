@@ -1,13 +1,5 @@
 # Code Instructions
 
-Put your code here.  If you include a notebook, please also convert the notebook to a PDF 
-file and place it in this directory. 
-Use nbconvert and find out ow to use it viw google.
+In an abundance of caution, the zip file of the modified data I used was not placed here. Instead I transferred ownership to professor Fox, with his permission.
 
-The code must be documented.
-
-If the output of the notebook is to large (please check the size), you only must be committing the source and 
-create the PDF. the PDF should be referred to in the notebook as a link.
-
-
-
+To run the files, first run the pre-processing colab script to generate the modified images. Then run the CNN script to train the network.
