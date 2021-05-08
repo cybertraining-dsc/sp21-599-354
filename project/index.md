@@ -18,11 +18,11 @@ Weed identification is an important component of agriculture, and can effect the
 
 ## Contents
 
-{{
+{{<
 
-1. [Introduction]
+1. [Introduction](##1)
 
-2. [Pre-Processing]
+2. [Pre-Processing](##2)
 
 3. [Running The CNN]
 
@@ -34,11 +34,8 @@ Weed identification is an important component of agriculture, and can effect the
 
 7. [References]
 
-}}
+>}}
 
-{{% /pageinfo %}}
-
-**Keywords:** tensorflow, example. 
 
 ## 1. Introduction
 
