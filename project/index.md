@@ -75,7 +75,7 @@ In order to see if a visualization could help a human easily see where the hypot
 
 ![Figure 8](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/visualization.png)
 
-**Figure 4** Caption
+**Figure 4** The top row 0 shows the actual species distribution of the plants, while the bottom row 1 shows the AI prediction
 
 
 ## 4. Benchmarking
@@ -84,9 +84,7 @@ The longest operation by far was the first time reading in the images. This had 
 
 ## 5. Possible Extension
 
-The rotated images of the plants were ultimately not explored. This is due to the fact that the implementation that was followed required GPU resources on Google Colab. With only 420 images to feed into the model, the GPU was not strained. However, even with 90 degree rotations, it appeared that the GPU memory limit for running the entire notebook was reached before even the first epoch. If this project were to be attempted again, the images would either need to be smaller, or fewer straight images should be loaded so that their rotations would not exhaust GPU allocation.
-
-
+The rotated images of the plants were ultimately not explored. This is due to the fact that the implementation that was followed required GPU resources on Google Colab. With only 420 images to feed into the model, the GPU was not strained. However, even with 90 degree rotations, it appeared that the GPU memory limit for running the entire notebook was reached before even the first epoch. If this project were to be attempted again, the images would either need to be smaller, or fewer straight images should be loaded so that their rotations would not exhaust GPU allocation. One way to go about this would be to have a rotation set with fewer images of individual plants, but to rotate them such that the rotated dataset still around 420 images. Then, a comparison could be made between the training accuracy of 420 separate examples of each species vs fewer individual plants at a wider range of angles.
 
 ## 6. Conclusion
 
