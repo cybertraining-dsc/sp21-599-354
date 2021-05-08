@@ -16,14 +16,14 @@ Paula Madetzke, [sp21-599-354](https://github.com/cybertraining-dsc/sp21-599-354
 Weed identification is an important component of agriculture, and can effect the way utilize herbicide. When unable to locate weeds in a large field, farmers are forced to blanket utilize herbicide for weed control. However, this method is bad for the environment, as the herbicide can leech into the water, and bad for the farmer, because they then must pay for far more fertilizer than they really need to control weeds. This project utilizes images from the Aarhus University [^1] dataset to train a CNN to identify images of 12 species of plants. To better simulate actual rows of crops, a subset of the images for testing will be arranged in a list representing a crop row, with weeds being distributed in known locations. Then, the AI is tested on the row, and should be able to determine where in the row the weeds are located.
 
 
-## Contents
 
+## Contents
 
 {{< table_of_contents >}}
 
 {{% /pageinfo %}}
 
-Keywords: Agriculture, CNN.
+**Keywords:** tensorflow, example. 
 
 ## 1. Introduction
 
