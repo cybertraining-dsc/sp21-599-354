@@ -19,27 +19,11 @@ Weed identification is an important component of agriculture, and can effect the
 ## Contents
 
 
-
 {{< table_of_contents >}}
-
-1. [Introduction](##1)
-
-2. [Pre-Processing](##2)
-
-3. [Running The CNN](##3)
-
-4. [Benchmarking](##4)
-
-5. [Conclusion](##5)
-
-6. [Acknowledgments](##6)
-
-7. [References](##7)
-
 
 {{% /pageinfo %}}
 
-Keywords: agriculture, CNN
+Keywords: Agriculture, CNN.
 
 ## 1. Introduction
 
