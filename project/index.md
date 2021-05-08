@@ -54,16 +54,28 @@ background, it might learn features of the sand or border instead of the leaves.
 
 The next component to consider is the image size to be used. The CNN requires all images to be a uniform size to run correctly, while the original segmented data contains images of different sizes, ranging from a few 10s of pixels wide to over 4000. In order to get a sense a balance between having a broad enough dataset to have a large enough representation of the plant pictures to draw meaningful conclusions and the need to have reasonable file sizes, the image’s width or height, whichever is larger, was recorded and loaded into a histogram for each plant species. From a visual examination, 300x300 pixels was selected. An additional 100 pixels of padding were added to the final image size to prevent the images from being cut off when rotated. For each image in the segmented dataset, it is expanded to 400x400 pixels, and added to the straight image folder. Then, each image is rotated and versions are saved to a rotation folder. An ideal rotation would allow a fine grain of rotation. However, some resource limitations were met with the GPU used for the neural net. At first, the images were rotated by 10 degrees each before being saved, then 30, then 60, and finally 90. Finally, a csv file with ids and labels is needed to identify the images, and separate the training and the test data. A preprocessing python script can be used to achieve all of these goals.
 
-![Figure 4](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/black_grass_hist.png) | ![Figure 5](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/shepherds_purse_hist.png) | ![Figure 6](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/sugar_beet_hist.png) 
+![Figure 4](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/black_grass_hist.png) | ![Figure 5](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/shepherds_purse_hist.png) | ![Figure 6](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/sugar_beet_hist.png)
+
+**Figure 2** Histogams of the max(width, height) of each of the plant species in the full dataset
 
 
 ## 3. Running the CNN
 
 The implementation of the CNN is heavily based upon the tutorial on MINST fashion identification [^4] where the CNN identifies 28x28 pixel images of clothing. It is a 2 layer CNN implemented in pytorch. In the original neural net, there are 70000 of these small images and 9 clothing designations. In this dataset, there are only 3 types of labels, but much larger images. The tutorial had a train image set, a validation set, and a test set. After preprocessing, there were 420 suitable 400x400 unrotated images. Without any changes besides adjusting the file paths and image size parameters, the CNN could inconsistently get approximately 50 percent accuracy with the test data, with the highest accuracy at 15 epochs. Because this implementation has relatively few images compared to the MINST clothing dataset, the next test was to remove the validation set of images, in order to use more of the prepared images for training. The result was a maximum of 79 percent accuracy at 25 epochs.
 
+![Figure 7](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/training_images.png)
+
+**Figure 3** Examples of prepared training images
+
+The testing accuracy of the neural net on the test data tracked closely with the prediction accuracy when train accuracy was around 30 to 50 percent, lagging by only a few percent. However, when the training dataset reached the 70 percent accuracy range, the test set accuracy remained at only around 50 percent. Part of this could be due to the small size of the test set, or the fact each plant species had a slightly different number of suitable test images.
+
 An interesting observation is that although the model was able to consistently reach 60 percent accuracy, it would sometimes fall into a pattern where it would categorize all or almost all of test set as just one of the plants. There was no consistency in which plant it defaulted to, but in between runs where the model reached decent accuracy, it would repeat this behavior. Because the test set was evenly distributed between the three plants, this would cause the accuracy to go to around 30 percent.
 
 In order to see if a visualization could help a human easily see where the hypothetical herbicide would need to be placed, a chart was created with tiles. The first row is the true layout of the three types of plants in the dataset, where each plant is assigned a color. The second row is the AI prediction of which type of plant the test set is. Even with the 79 percent accuracy rate, it was not as clear as it could be from the image how accurate the model was. One way of making the visualization both easier to visually determine accuracy and more realistic is to have one type of plant be the dominant crop, and have patches of weeds throughout the row. The major obstacle to this was the fact that there were not enough suitable images to have a dominant plant in the test group. Too many images used in testing would have a detrimental impact on training the model.
+
+![Figure 8]((https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/visualization.png)
+
+**Figure 4** Caption
 
 
 ## 4. Benchmarking
