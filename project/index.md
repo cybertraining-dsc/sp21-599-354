@@ -23,7 +23,7 @@ Weed identification is an important component of agriculture, and can effect the
 
 {{% /pageinfo %}}
 
-**Keywords:** tensorflow, example. 
+**Keywords:** Agriculture, CNN. 
 
 ## 1. Introduction
 
