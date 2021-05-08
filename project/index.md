@@ -42,7 +42,9 @@ the larger picture (non-segmented), while the third is both cropped, and has the
 the segmented data is used. This is because it is important for the AI to train such that it detects patterns only for the most important features of the image. If the AI were to train on the images in the
 background, it might learn features of the sand or border instead of the leaves.
 
-The next 
+The next component to consider is the image size to be used. The CNN requires all images to be a uniform size to run correctly, while the original segmented data contains images of different sizes, ranging from a few 10s of pixels wide to over 4000. In order to get a sense a balance between having a broad enough dataset to have a large enough representation of the plant pictures to draw meaningful conclusions and the need to have reasonable file sizes, the image’s width or height, whichever is larger, was recorded and loaded into a histogram for each plant species. From a visual examination, 300x300 pixels was selected. An additional 100 pixels of padding were added to the final image size to prevent the images from being cut off when rotated. For each image in the segmented dataset, it is expanded to 400x400 pixels, and added to the straight image folder. Then, each image is rotated and versions are saved to a rotation folder. An ideal rotation would allow a fine grain of rotation. However, some resource limitations were met with the GPU used for the neural net. At first, the images were rotated by 10 degrees each before being saved, then 30, then 60, and finally 90. 
+
+ 
 
 ![Figure 1](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/large_weeds.jpg)
 
@@ -56,43 +58,10 @@ With the training dataset selected, it must pe preprocessed to work with the pyt
 that they are the same size, create a csv file with ids and labels to identify the images, and separate the training and the test data. A preprocessing python script can be used to achieve all three. 
 
 
+## 3. Running the CNN
 
+The implementation of the CNN is heavily based upon the tutorial on MINST fashion identification [^4] where the CNN identifies 28x28 pixel images of cloting. It is a 2 layer CNN implemented in pytorch. In the original neural net, there are 70000 of these small images and 9 clothing designations. In this dataset, there are only 3 types of labels, but much larger images. The tutorial had a train image set, a validation set, and a test set. After preprocessing, there were 420 suitable 400x400 unrotated images. Without any changes besides adjusting the filepaths and image size parameters, the CNN could inconsistently get approximately 50 percent accuracy with the test data, with the highest accuracy at 15 epochs. Because this implementation has relatively few images compared to the MINST clothing dataset, the next test was to remove the validation set of images, in order to use more of the prepared images for training. The result was a maximum of 79 percent accuracy at 25 epochs.
 
-The report is written in (hugo) markdown and not commonmark. As such some features are not visible in GitHub. You can 
-set up hugo on your local computer if you want to see how it renders or commit and wait 10 minutes once your report is 
-bound into cybertraining.
-
-It is to be noted that markdown works best if you include an empty line before and after each context change. 
-Thus the following is wrong:
-
-```
-# This is My Headline
-This author does ignore proper markdown while not using empty lines between context changes
-1. This is because this author ignors all best practices
-```
-
-Instead, this should be 
-
-```
-# This is My Headline
-
-We do not ignore proper markdown while using empty lines between context changes
-
-1. This is because we encourage best practices to cause issues.
-```
-
-## 2.1. GitHub Actions
-
-When going to GitHub Actions you will see a report is autmatically generated with some help on improving your markdown. 
-We will not review any document that does not pass this check.
-
-## 2.2. PAst Copy from Word or other Editors is a Disaster!
-
-We recommend that you sue a proper that is integrated with GitHub or you use the commandline tools. We may include 
-comments into your document that you will have to fix, If you juys past copy you will 
-
-1. Not learn how to use GitHub properly and we deduct points
-2. Overwrite our coments that you than may miss and may result in point deductions as you have not addressed them.
 
 ## 2.3. Report or Project
 
