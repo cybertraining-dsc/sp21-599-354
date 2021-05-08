@@ -62,29 +62,9 @@ that they are the same size, create a csv file with ids and labels to identify t
 
 The implementation of the CNN is heavily based upon the tutorial on MINST fashion identification [^4] where the CNN identifies 28x28 pixel images of cloting. It is a 2 layer CNN implemented in pytorch. In the original neural net, there are 70000 of these small images and 9 clothing designations. In this dataset, there are only 3 types of labels, but much larger images. The tutorial had a train image set, a validation set, and a test set. After preprocessing, there were 420 suitable 400x400 unrotated images. Without any changes besides adjusting the filepaths and image size parameters, the CNN could inconsistently get approximately 50 percent accuracy with the test data, with the highest accuracy at 15 epochs. Because this implementation has relatively few images compared to the MINST clothing dataset, the next test was to remove the validation set of images, in order to use more of the prepared images for training. The result was a maximum of 79 percent accuracy at 25 epochs.
 
+In order to see if a visualization could help a human easily see where the hypothetical herbicide would need to be placed, a chart was created with tiles. The first row is the true layout of the three types of plants in the dataset, where each plant is assigned a color. The second row is the AI prediction of which type of plant the test set is. Even with the 79 percent accuracy rate, it was not as clear as it could be from the image how accurate the model was. One way of making the visualization both easier to visually determine accuracy and more realistic is to have one type of plant be the dominant crop, and have patches of weeds throughout the row. The major obstacle to this was the fact that there were not enough suitable images to have a dominant plant in the test group. Too many images used in testing would have a detrimental impact on training the model.
 
-## 2.3. Report or Project
 
-You have two choices for the final project. 
-
-1. Project, That is a final report that includes code.
-2. Report, that is a final project without code.
-
-YOu will be including the type of the project as a prefix to your title, as well as in the Type tag
-at the beginning of your project.
-
-## 3. Using Images
-
-![Figure 1](https://github.com/cybertraining-dsc/fa20-523-314/raw/main/project/images/chart.png)
-
-**Figure 1:** Images can be included in the report, but if they are copied you must cite them [^1].
-
-## 4. Using itemized lists only where needed
-
-Remember this is not a powerpoint presentation, but a report so we recommend
-
-1. Use itemized or enumeration lists sparingly
-2. When using bulleted lists use * and not -
 
 ## 5. Datasets
 
@@ -93,9 +73,6 @@ However, if the data is publicly available you program must contain a download f
 Write it using pythons `request`. You will get point deductions if you check-in data sets that are large and do not use
 the download function.
 
-## 6. Benchmark
-
-Your project must include a benchmark. The easiest is to use cloudmesh-common [^2]
 
 ## 6. Conclusion
 
