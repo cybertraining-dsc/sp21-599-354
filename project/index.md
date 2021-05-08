@@ -40,7 +40,7 @@ the larger picture (non-segmented), while the third is both cropped, and has the
 the segmented data is used. This is because it is important for the AI to train such that it detects patterns only for the most important features of the image. If the AI were to train on the images in the
 background, it might learn features of the sand or border instead of the leaves.
 
-The next component to consider is the image size to be used. The CNN requires all images to be a uniform size to run correctly, while the original segmented data contains images of different sizes, ranging from a few 10s of pixels wide to over 4000. In order to get a sense a balance between having a broad enough dataset to have a large enough representation of the plant pictures to draw meaningful conclusions and the need to have reasonable file sizes, the image’s width or height, whichever is larger, was recorded and loaded into a histogram for each plant species. From a visual examination, 300x300 pixels was selected. An additional 100 pixels of padding were added to the final image size to prevent the images from being cut off when rotated. For each image in the segmented dataset, it is expanded to 400x400 pixels, and added to the straight image folder. Then, each image is rotated and versions are saved to a rotation folder. An ideal rotation would allow a fine grain of rotation. However, some resource limitations were met with the GPU used for the neural net. At first, the images were rotated by 10 degrees each before being saved, then 30, then 60, and finally 90. 
+
 
 
 ![Figure 1](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/large_weeds.jpg)
@@ -49,10 +49,12 @@ The next component to consider is the image size to be used. The CNN requires al
 
 ![Figure 3](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/segmented.png)
 
-**Figure 1** Dataset Image options [^1]: Large image with multiple plants (top), non-segmented (middle), segmented (bottom) 
+**Figure 1** Dataset Image options [^1]: Large image with multiple plants (top), non-segmented (middle), segmented (bottom)
 
-With the training dataset selected, it must be pre-processed to work with the pytorch CNN implementation [^4]. The following must be done to prepare the dataset: add padding to all of the segmented images so
-that they are the same size, create a csv file with ids and labels to identify the images, and separate the training and the test data. A preprocessing python script can be used to achieve all three. 
+
+The next component to consider is the image size to be used. The CNN requires all images to be a uniform size to run correctly, while the original segmented data contains images of different sizes, ranging from a few 10s of pixels wide to over 4000. In order to get a sense a balance between having a broad enough dataset to have a large enough representation of the plant pictures to draw meaningful conclusions and the need to have reasonable file sizes, the image’s width or height, whichever is larger, was recorded and loaded into a histogram for each plant species. From a visual examination, 300x300 pixels was selected. An additional 100 pixels of padding were added to the final image size to prevent the images from being cut off when rotated. For each image in the segmented dataset, it is expanded to 400x400 pixels, and added to the straight image folder. Then, each image is rotated and versions are saved to a rotation folder. An ideal rotation would allow a fine grain of rotation. However, some resource limitations were met with the GPU used for the neural net. At first, the images were rotated by 10 degrees each before being saved, then 30, then 60, and finally 90. Finally, a csv file with ids and labels is needed to identify the images, and separate the training and the test data. A preprocessing python script can be used to achieve all of these goals.
+
+![Figure 4](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/black_grass_hist.png) | ![Figure 5](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/shepherds_purse_hist.png) | ![Figure 6](https://github.com/cybertraining-dsc/sp21-599-354/raw/main/project/images/sugar_beet_hist.png) 
 
 
 ## 3. Running the CNN
@@ -63,23 +65,28 @@ An interesting observation is that although the model was able to consistently r
 
 In order to see if a visualization could help a human easily see where the hypothetical herbicide would need to be placed, a chart was created with tiles. The first row is the true layout of the three types of plants in the dataset, where each plant is assigned a color. The second row is the AI prediction of which type of plant the test set is. Even with the 79 percent accuracy rate, it was not as clear as it could be from the image how accurate the model was. One way of making the visualization both easier to visually determine accuracy and more realistic is to have one type of plant be the dominant crop, and have patches of weeds throughout the row. The major obstacle to this was the fact that there were not enough suitable images to have a dominant plant in the test group. Too many images used in testing would have a detrimental impact on training the model.
 
-The rotated images of the plants were ultimately not explored. This is due to the fact that the implementation that was followed required GPU resources on Google Colab. With only 420 images to feed into the model, the GPU was not strained. However, even with 90 degree rotations, it appeared that the GPU memory limit for running the entire notebook was reached before even the first epoch. If this project were to be attempted again, the images would either need to be smaller, or fewer straight images should be loaded so that their rotations would not exhaust GPU allocation.
-
 
 ## 4. Benchmarking
 
 The longest operation by far was the first time reading in the images. This had a timed tqdm built in, so the stopwatch function was not used here. Subsequent running of the CNN training program must cache some of the results, so the image loading takes much less time. An initial loading of the 420 images took approximately 10 minutes. WIth the GPU accelarator enabled, the training of 25 epochs got to 6.809s while the test only took .015s. 
 
-## 5. Conclusion
+## 5. Possible Extension
+
+The rotated images of the plants were ultimately not explored. This is due to the fact that the implementation that was followed required GPU resources on Google Colab. With only 420 images to feed into the model, the GPU was not strained. However, even with 90 degree rotations, it appeared that the GPU memory limit for running the entire notebook was reached before even the first epoch. If this project were to be attempted again, the images would either need to be smaller, or fewer straight images should be loaded so that their rotations would not exhaust GPU allocation.
+
+
+
+## 6. Conclusion
 
 With 420 non-rotated plant images, a maximum accuracy of 79 precent was able to be reached in part by using the entire training dataset for training rather than validation, as the project this was based on did. With a significantly smaller number of images for the neural net to train on, even a 10 percent change in the available training images mattered in its implementation. Another main conclusion is the importance of resource use and choice in running CNNs. Although in theory there could only be benefits to adding more images to train, with large enough datasets, practical computing limitations become increasingly apparent. Future work would involve chosing a model that either did not require GUP allocation, or modifying the chosen images to take fewer computing resources.
 
-## 6. Acknowledgments
+## 7. Acknowledgments
 
 Dr. Geoffrey Fox
+
 Dr. Greggor von Laszewski 
 
-## 7. References
+## 8. References
 
 [^1]: Aarhus University <https://vision.eng.au.dk/plant-seedlings-dataset/>
 
