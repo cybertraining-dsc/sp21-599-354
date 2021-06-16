@@ -1,4 +1,15 @@
-# Project: Identifying Agricultural Weeds with CNN
+---
+date: 2021-03-15
+title: Project: Identifying Agricultural Weeds with CNN
+linkTitle: Weed detection
+tags: ["project", "ai", ""]
+description: Project: Identifying Agricultural Weeds with CNN
+author: Paula Madetzke
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+---
+
 
 [![Check Report](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
 [![Status](https://github.com/cybertraining-dsc/sp21-599-354/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/sp21-599-354/actions)
