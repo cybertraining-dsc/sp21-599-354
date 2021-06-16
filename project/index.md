@@ -1,9 +1,9 @@
 ---
 date: 2021-03-15
-title: Project: Identifying Agricultural Weeds with CNN
+title: "Project: Identifying Agricultural Weeds with CNN"
 linkTitle: Weed detection
 tags: ["project", "ai", ""]
-description: Project: Identifying Agricultural Weeds with CNN
+description: "Project: Identifying Agricultural Weeds with CNN"
 author: Paula Madetzke
 resources:
 - src: "**.{png,jpg}"
